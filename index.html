@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¡Bienvenida!</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="flower-animation.css">
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      height: 100vh;
+      align-items: center;
+      justify-items: center;
+    }
+    .flower-container {
+      margin-bottom: -550px; /* Adjust as needed */
+    }
+    .text-container {
+      margin-top: 20px; /* Adjust as needed */
+    }
+  </style>
+</head>
+<body>
+  <iframe src="audio-player.html" style="display: none;" id="audioIframe"></iframe>
+  <div class="grid-container">
+    <div class="flower-container">
+      <div class="flowers">
+        <div class="flower flower--1">
+          <div class="flower__leafs flower__leafs--1">
+            <div class="flower__leaf flower__leaf--1"></div>
+            <div class="flower__leaf flower__leaf--2"></div>
+            <div class="flower__leaf flower__leaf--3"></div>
+            <div class="flower__leaf flower__leaf--4"></div>
+            <div class="flower__white-circle"></div>
+            <div class="flower__light flower__light--1"></div>
+            <div class="flower__light flower__light--2"></div>
+            <div class="flower__light flower__light--3"></div>
+            <div class="flower__light flower__light--4"></div>
+            <div class="flower__light flower__light--5"></div>
+            <div class="flower__light flower__light--6"></div>
+            <div class="flower__light flower__light--7"></div>
+            <div class="flower__light flower__light--8"></div>
+          </div>
+          <div class="flower__line">
+            <div class="flower__line__leaf flower__line__leaf--1"></div>
+            <div class="flower__line__leaf flower__line__leaf--2"></div>
+            <div class="flower__line__leaf flower__line__leaf--3"></div>
+            <div class="flower__line__leaf flower__line__leaf--4"></div>
+            <div class="flower__line__leaf flower__line__leaf--5"></div>
+            <div class="flower__line__leaf flower__line__leaf--6"></div>
+          </div>
+        </div>
+        <div class="flower flower--2">
+          <div class="flower__leafs flower__leafs--2">
+            <div class="flower__leaf flower__leaf--1"></div>
+            <div class="flower__leaf flower__leaf--2"></div>
+            <div class="flower__leaf flower__leaf--3"></div>
+            <div class="flower__leaf flower__leaf--4"></div>
+            <div class="flower__white-circle"></div>
+            <div class="flower__light flower__light--1"></div>
+            <div class="flower__light flower__light--2"></div>
+            <div class="flower__light flower__light--3"></div>
+            <div class="flower__light flower__light--4"></div>
+            <div class="flower__light flower__light--5"></div>
+            <div class="flower__light flower__light--6"></div>
+            <div class="flower__light flower__light--7"></div>
+            <div class="flower__light flower__light--8"></div>
+          </div>
+          <div class="flower__line">
+            <div class="flower__line__leaf flower__line__leaf--1"></div>
+            <div class="flower__line__leaf flower__line__leaf--2"></div>
+            <div class="flower__line__leaf flower__line__leaf--3"></div>
+            <div class="flower__line__leaf flower__line__leaf--4"></div>
+            <div class="flower__line__leaf flower__line__leaf--5"></div>
+            <div class="flower__line__leaf flower__line__leaf--6"></div>
+          </div>
+        </div>
+        <div class="flower flower--3">
+          <div class="flower__leafs flower__leafs--3">
+            <div class="flower__leaf flower__leaf--1"></div>
+            <div class="flower__leaf flower__leaf--2"></div>
+            <div class="flower__leaf flower__leaf--3"></div>
+            <div class="flower__leaf flower__leaf--4"></div>
+            <div class="flower__white-circle"></div>
+            <div class="flower__light flower__light--1"></div>
+            <div class="flower__light flower__light--2"></div>
+            <div class="flower__light flower__light--3"></div>
+            <div class="flower__light flower__light--4"></div>
+            <div class="flower__light flower__light--5"></div>
+            <div class="flower__light flower__light--6"></div>
+            <div class="flower__light flower__light--7"></div>
+            <div class="flower__light flower__light--8"></div>
+          </div>
+          <div class="flower__line">
+            <div class="flower__line__leaf flower__line__leaf--1"></div>
+            <div class="flower__line__leaf flower__line__leaf--2"></div>
+            <div class="flower__line__leaf flower__line__leaf--3"></div>
+            <div class="flower__line__leaf flower__line__leaf--4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-container">
+      <div class="container col-sm-10 col-md-9 col-lg-8 my-5">
+        <div class="p-5 text-center text-muted">
+          <svg class="bi mt-5 mb-3" width="48" height="48"><use xlink:href="#check2-circle"></use></svg>
+          <h1 class="text-body-emphasis">¡Bienvenida, Srita. Karolina Badilla!</h1>
+          <p class="col-lg-8 mx-auto my-2">
+            ¡Ya un año de conocernos! Te diseñé esta web conmemorándolo. Por favor, presiona este botón para revelar el contenido de la página.</p>
+          <a href="main.html"><button class="btn btn-primary custom-button" type="button">
+            ¡Continuemos!
+          </button></a>
+          <button class="btn btn-secondary" id="play-audio" type="button"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script>
+    if (typeof bootstrap === 'undefined') {
+      document.write('<script src="path/to/local/bootstrap.bundle.min.js"><\/script>');
+    }
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const audioIframe = document.getElementById('audioIframe');
+      const playButton = document.getElementById('play-audio');
+      if (audioIframe && playButton) {
+        playButton.addEventListener('click', function() {
+          const audio = audioIframe.contentWindow.document.getElementById('background-audio');
+          if (audio) {
+            audio.muted = false;
+            audio.play();
+            localStorage.setItem('audioMuted', 'false');
+          }
+        });
+      }
+    });
+  </script>
+  <style>
+    #play-audio {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      background-color: #ffa8d0;
+      border: none;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  </style>
+  <style>
+    #play-audio::before {
+      content: '▶';
+    }
+  </style>
+</body>
+</html>
